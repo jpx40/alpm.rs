@@ -21,7 +21,7 @@ fn main() {
     #[allow(dead_code)]
     #[allow(unused_variables)]
     let lib = pkg_config::Config::new()
-        .atleast_version("13.0.0")
+        .atleast_version("14.0.0")
         .statik(cfg!(feature = "static"))
         .probe("libalpm")
         .unwrap();
